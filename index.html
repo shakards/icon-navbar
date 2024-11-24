@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Icon Tutorial</title>
+    <!-- Font Awesome CDN (to display icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Body Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Styling */
+        .navbar1 {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+        }
+
+        .navbar1 a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar1 a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Icon Styling */
+        .navbar1 i {
+            margin-right: 8px;
+        }
+
+        /* Copy Button Styling */
+        .copy-btn1 {
+            margin-left: 88.5%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn1.copied {
+            background-color: #28a745;
+        }
+
+        /* Code Box Styling */
+        pre {
+            margin-left: 8%;
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-family: monospace;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        code {
+            display: block;
+            padding: 10px;
+        }
+
+        /* Syntax Highlighting */
+        .tag1 {
+            color: #0000FF; /* Blue */
+        }
+
+        .attribute1 {
+            color: #FF0000; /* Red */
+            font-weight: bold; /* Thicker Red */
+        }
+
+        .value1 {
+            color: #1e90ff; /* Blue */
+        }
+
+        .hex-value1 {
+            color: #32CD32; /* Green */
+        }
+
+        .remaining-text1 {
+            color: #FF1493; /* Pink */
+        }
+
+        .highlight1 {
+            color: #fdf9ff;
+            background-color: black;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .explanation1 {
+            display: block;
+            margin-top: 5px;
+            margin-left: 25px;
+            color: #444;
+            font-style: italic;
+            font-size: 0.9em;
+            padding-left: 20px;
+            color: #72b626;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Navbar with Icon Example -->
+        <div class="navbar1">
+            <div class="logo1">MyWebsite</div>
+            <a href="#home"><i class="fas fa-home"></i>Home</a>
+            <a href="#about"><i class="fas fa-info-circle"></i>About</a>
+            <a href="#services"><i class="fas fa-cogs"></i>Services</a>
+            <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+        </div>
+        <br>
+
+        <h1>Navbar with Icon Tutorial</h1>
+        <p>This tutorial demonstrates how to create a simple HTML navigation bar with icons.</p>
+        <h2>What is a Navbar with Icons?</h2>
+        <p>
+            A navbar with icons is a navigation bar that includes both text and icons for each link. The icons can help users quickly identify the sections or pages they are accessing.
+        </p>
+        <h3>Why Use Icons in a Navbar?</h3>
+        <ul>
+            <li><strong>Enhanced Visual Appeal:</strong> Icons make the navbar more engaging and user-friendly.</li>
+            <li><strong>Quick Navigation:</strong> Icons help users quickly understand where each link leads.</li>
+            <li><strong>Modern Look:</strong> Adding icons gives the navbar a more contemporary, sleek design.</li>
+        </ul>
+
+        <!-- Code Box -->
+        <div style="position: relative;">
+            <pre id="code-box">
+        <code>&lt;<span class="tag1">!DOCTYPE</span> html&gt;
+        &lt;<span class="tag1">html</span> lang=<span class="attribute1">"en"</span>&gt;
+        &lt;<span class="tag1">head</span&gt;
+          &lt;<span class="tag1">meta</span> charset=<span class="attribute1">"UTF-8"</span>&gt;
+          &lt;<span class="tag1">meta</span> name=<span class="attribute1">"viewport"</span> content=<span class="attribute1">"width=device-width, initial-scale=1.0"</span>&gt;
+          &lt;<span class="tag1">title</span>&gt;Navbar with Icon&lt;/<span class="tag1">title</span>&gt;
+          &lt;<span class="tag1">link</span> rel=<span class="attribute1">"stylesheet"</span> href=<span class="attribute1">"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"</span>&gt;
+          &lt;<span class="tag1">style</span>&gt;
+            .navbar1 {
+              display: flex;
+              align-items: center;
+              background-color: <span class="hex-value1">#333</span>;
+              padding: 10px 20px;
+            }
+            .navbar1 .logo1 {
+              font-size: 20px;
+              font-weight: bold;
+              color: white;
+              margin-right: auto;
+            }
+            .navbar1 a {
+              color: white;
+              text-decoration: none;
+              padding: 10px 15px;
+              margin: 0 5px;
+              display: flex;
+              align-items: center;
+            }
+            .navbar1 a:hover {
+              background-color: <span class="hex-value1">#575757</span>;
+              border-radius: 5px;
+            }
+            .navbar1 i {
+              margin-right: 8px;
+            }
+          &lt;/<span class="tag1">style</span>&gt;
+        &lt;/<span class="tag1">head</span>&gt;
+        &lt;<span class="tag1">body</span>&gt;
+          &lt;<span class="tag1">div</span> class=<span class="attribute1">"navbar1"</span>&gt;
+            &lt;<span class="tag1">div</span> class=<span class="attribute1">"logo1"</span>&gt;MyWebsite&lt;/<span class="tag1">div</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#home"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-home"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Home&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#about"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-info-circle"</span>&gt;&lt;/<span class="tag1">i</span>&gt;About&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#services"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-cogs"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Services&lt;/<span class="tag1">a</span>&gt;
+            &lt;<span class="tag1">a</span> href=<span class="attribute1">"#contact"</span>&gt;&lt;<span class="tag1">i</span> class=<span class="attribute1">"fas fa-envelope"</span>&gt;&lt;/<span class="tag1">i</span>&gt;Contact&lt;/<span class="tag1">a</span>&gt;
+          &lt;/<span class="tag1">div</span>&gt;
+        &lt;/<span class="tag1">body</span>&gt;
+        &lt;/<span class="tag1">html</span&gt;</code>
+        </pre>
+
+            <!-- Copy Button -->
+            <button id="copy-btn" class="copy-btn1">Copy</button>
+        </div>
+    </div>
+
+    <script>
+        const copyButton = document.getElementById('copy-btn');
+        const codeBox = document.getElementById('code-box');
+
+        copyButton.addEventListener('click', () => {
+            // Select the code text
+            const range = document.createRange();
+            range.selectNode(codeBox);
+            window.getSelection().removeAllRanges(); // Clear current selections
+            window.getSelection().addRange(range); // Select the text
+
+            try {
+                // Copy the text
+                document.execCommand('copy');
+                // Change button text after copying
+                copyButton.textContent = 'Copied!';
+                copyButton.classList.add('copied');
+                // Reset button text after 2 seconds
+                setTimeout(() => {
+                    copyButton.textContent = 'Copy';
+                    copyButton.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                console.error('Error copying text: ', err);
+            }
+
+            // Clear the selection
+            window.getSelection().removeAllRanges();
+        });
+    </script>
+</body>
+
+</html>
